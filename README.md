@@ -50,8 +50,8 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
 ## 🏆 Projects
 
 <div class="left-right">
-    <h4 class="project-title">**Fraud Detection in Credit Card Transactions**</h4>
-    <span class="project-date">*October 2024*</span>
+    <h3 class="project-title">Fraud Detection in Credit Card Transactions</h4>
+    <span class="project-date">October 2024</span>
 </div>
 - **Algorithm & Methods**: Isolation Forest, Random Forest + SMOTE, XGBoost + SMOTE, PCA  
 - Developed machine learning models to detect fraudulent transactions in a highly imbalanced credit card dataset.
@@ -59,8 +59,8 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
 - Conducted confusion matrix analysis to optimize trade-offs between False Positives and False Negatives.
 
 <div class="left-right">
-    <h4 class="project-title">**Cat and Dog Owner Classification**</h4>
-    <span class="project-date">*September 2024*</span>
+    <h3 class="project-title">Cat and Dog Owner Classification</h4>
+    <span class="project-date">September 2024</span>
 </div>
 - **Algorithms & Methods**: Logistic Regression, SVM, Decision Trees, TF-IDF  
 - Developed machine learning models to classify cat and dog owners based on user comments.
@@ -68,8 +68,8 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
 - Achieved best results with SVM (C=10), with 98% accuracy for cat owners and 95% for dog owners.
 
 <div class="left-right">
-    <h4 class="project-title">**Housing Price Prediction**</h4>
-    <span class="project-date">*September 2024*</span>
+    <h4 class="project-title">Housing Price Prediction</h4>
+    <span class="project-date">September 2024</span>
 </div>
 - **Algorithms & Methods**: Linear Regression
 - Developed a Linear Regression model using Scikit-learn to predict housing prices.
@@ -86,13 +86,3 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
 - **Frameworks & Libraries**: Flask, Django, FastAPI, Redis
 
 ---
-
-## 👥 Leadership Roles & Abilities
-
-#### **Baseball Team Captain**  
-*2011 – 2017*  
-- Led the rookie team to win the university club tournament for two consecutive years, fostering a collaborative and inclusive environment.
-
-#### **Disability Student Support Volunteer**  
-*2015*  
-- Engaged in supporting students with disabilities, enhancing educational experiences and promoting inclusivity and accessibility.
