@@ -29,7 +29,15 @@
         {% endif %}
 
         {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        <!-- <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p> -->
+        <div style="text-align: center;">
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                <img src="/assets/img/LI-In-Bug.png" alt="LinkedIn" style="width:40px; margin-right: 10px;">
+            </a>
+            <a href="{{ site.github.owner_url }}" target="_blank">
+                <img src="/assets/img/github-mark.svg" alt="GitHub" style="width:40px;">
+            </a>
+        </div>
         {% endif %}
 
         {% if site.show_downloads %}
@@ -39,17 +47,6 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
-        <div style="text-align: center; margin-top: 20px;">
-            <!-- LinkedIn logo -->
-            <a href="https://www.linkedin.com/in/drageon" target="_blank">
-              <img src="/assets/img/LI-In-Bug.png" alt="LinkedIn" style="width: 40px; margin-right: 15px;">
-            </a>
-            
-            <!-- GitHub logo -->
-            <a href="https://github.com/DrageonLee" target="_blank">
-              <img src="/assets/img/github-mark.svg" alt="GitHub" style="width: 40px;">
-            </a>
-          </div>
       </header>
       <section>
 
