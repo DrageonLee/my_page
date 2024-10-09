@@ -2,7 +2,9 @@
 
 ## 👋 Who is Drageon Lee?
 
+<p class="justified-text">
 I am a data scientist currently pursuing a Master's in Information Studies (Data Science track) at UT Austin. Originally from Korea, I have a strong foundation in data engineering and quality engineering, and I am transitioning into machine learning to solve complex business challenges. Proficient in Python, SQL, and machine learning frameworks like Scikit-learn and TensorFlow, I am passionate about applying these skills in production environments. I have a global perspective and am eager to collaborate with diverse teams to drive innovation and development. Through hands-on projects, I am committed to enhancing my expertise in deep learning and data science.
+</p>
 
 ## 🎓 Education
 
