@@ -50,23 +50,23 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
 ## 🏆 Projects
 
 #### **Fraud Detection in Credit Card Transactions**  
-*October 2024*  
+*October 2024*
+- **Algorithm & Methods**: Isolation Forest, Random Forest + SMOTE, XGBoost + SMOTE, PCA  
 - Developed machine learning models to detect fraudulent transactions in a highly imbalanced credit card dataset.
-- **Algorithm & Methods**: Isolation Forest, Random Forest + SMOTE, XGBoost + SMOTE, PCA
 - Implemented SMOTE to address class imbalance, achieving best results with XGBoost + SMOTE (Recall: 0.84, ROC-AUC: 0.97).
 - Conducted confusion matrix analysis to optimize trade-offs between False Positives and False Negatives.
 
 #### **Cat and Dog Owner Classification**  
-*September 2024*  
+*September 2024*
+- **Algorithms & Methods**: Logistic Regression, SVM, Decision Trees, TF-IDF  
 - Developed machine learning models to classify cat and dog owners based on user comments.
-- **Algorithms & Methods**: Logistic Regression, SVM, Decision Trees, TF-IDF
 - Preprocessed text data using TF-IDF to convert user comments into numerical features.
 - Achieved best results with SVM (C=10), with 98% accuracy for cat owners and 95% for dog owners.
 
 #### **Housing Price Prediction**  
 *September 2024*  
-- Developed a Linear Regression model using Scikit-learn to predict housing prices.
 - **Algorithms & Methods**: Linear Regression
+- Developed a Linear Regression model using Scikit-learn to predict housing prices.
 - Preprocessed data by capping outliers and applied log transformation to normalize skewed distributions.
 - Achieved R² values of 0.864 on the validation set and 0.897 on the test set.
 
