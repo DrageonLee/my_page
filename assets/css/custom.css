@@ -5,6 +5,6 @@ img[alt="Logo"] {
     object-fit: cover; /* set the center */
 }
 
-.justified-text {
+body {
     text-align: justify;
 }
