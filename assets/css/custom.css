@@ -1,0 +1,6 @@
+img[alt="logo"] {
+    border-radius: 50%; /* Circle */
+    width: 150px; /* custom_with */
+    height: 150px; /* custom_height */
+    object-fit: cover; /* set the center */
+}

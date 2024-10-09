@@ -3,3 +3,5 @@ logo: /assets/img/profile_img.JPG
 description: Drageon's site
 Show_downloads: False
 theme: jekyll-theme-minimal
+sass:
+  style: compressed
