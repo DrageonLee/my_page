@@ -12,3 +12,18 @@ body {
 h4 + p {
     margin-top: 0;
 }
+
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-right .project-title {
+    margin: 0;
+}
+
+.left-right .project-date {
+    margin: 0;
+    font-style: italic;
+}
