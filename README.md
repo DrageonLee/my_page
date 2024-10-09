@@ -49,21 +49,21 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
 
 ## 🏆 Projects
 
-### **Fraud Detection in Credit Card Transactions**  
+#### **Fraud Detection in Credit Card Transactions**  
 *October 2024*  
 - Developed machine learning models to detect fraudulent transactions in a highly imbalanced credit card dataset.
 - **Algorithm & Methods**: Isolation Forest, Random Forest + SMOTE, XGBoost + SMOTE, PCA
 - Implemented SMOTE to address class imbalance, achieving best results with XGBoost + SMOTE (Recall: 0.84, ROC-AUC: 0.97).
 - Conducted confusion matrix analysis to optimize trade-offs between False Positives and False Negatives.
 
-### **Cat and Dog Owner Classification**  
+#### **Cat and Dog Owner Classification**  
 *September 2024*  
 - Developed machine learning models to classify cat and dog owners based on user comments.
 - **Algorithms & Methods**: Logistic Regression, SVM, Decision Trees, TF-IDF
 - Preprocessed text data using TF-IDF to convert user comments into numerical features.
 - Achieved best results with SVM (C=10), with 98% accuracy for cat owners and 95% for dog owners.
 
-### **Housing Price Prediction**  
+#### **Housing Price Prediction**  
 *September 2024*  
 - Developed a Linear Regression model using Scikit-learn to predict housing prices.
 - **Algorithms & Methods**: Linear Regression
@@ -83,14 +83,10 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
 
 ## 👥 Leadership Roles & Abilities
 
-### **Baseball Team Captain**  
+#### **Baseball Team Captain**  
 *2011 – 2017*  
 - Led the rookie team to win the university club tournament for two consecutive years, fostering a collaborative and inclusive environment.
 
-### **Disability Student Support Volunteer**  
+#### **Disability Student Support Volunteer**  
 *2015*  
 - Engaged in supporting students with disabilities, enhancing educational experiences and promoting inclusivity and accessibility.
-
-## 🌐 Connect with Me
-
-[LinkedIn Profile](https://www.linkedin.com/in/drageon)
