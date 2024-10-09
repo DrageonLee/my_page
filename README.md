@@ -50,7 +50,7 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
 ## 🏆 Projects
 
 <div class="left-right">
-    <h3 class="project-title">Fraud Detection in Credit Card Transactions</h4>
+    <h4 class="project-title">Fraud Detection in Credit Card Transactions</h4>
     <span class="project-date">October 2024</span>
 </div>
 - **Algorithm & Methods**: Isolation Forest, Random Forest + SMOTE, XGBoost + SMOTE, PCA  
@@ -59,7 +59,7 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
 - Conducted confusion matrix analysis to optimize trade-offs between False Positives and False Negatives.
 
 <div class="left-right">
-    <h3 class="project-title">Cat and Dog Owner Classification</h4>
+    <h4 class="project-title">Cat and Dog Owner Classification</h4>
     <span class="project-date">September 2024</span>
 </div>
 - **Algorithms & Methods**: Logistic Regression, SVM, Decision Trees, TF-IDF  
