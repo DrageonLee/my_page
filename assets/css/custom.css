@@ -4,3 +4,7 @@ img[alt="Logo"] {
     height: 200px; /* custom_height */
     object-fit: cover; /* set the center */
 }
+
+.justified-text {
+    text-align: justify;
+}
