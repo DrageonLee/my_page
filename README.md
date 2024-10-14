@@ -53,7 +53,7 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
     <h4 class="project-title">Fraud Detection in Credit Card Transactions</h4>
     <span class="project-date">October 2024</span>
 </div>
-- **Algorithm & Methods**: Isolation Forest, Random Forest + SMOTE, XGBoost + SMOTE, PCA  
+- <strong>Algorithm & Methods</strong>: Isolation Forest, Random Forest + SMOTE, XGBoost + SMOTE, PCA  
 - Developed machine learning models to detect fraudulent transactions in a highly imbalanced credit card dataset.
 - Implemented SMOTE to address class imbalance, achieving best results with XGBoost + SMOTE (Recall: 0.84, ROC-AUC: 0.97).
 - Conducted confusion matrix analysis to optimize trade-offs between False Positives and False Negatives.
@@ -62,7 +62,7 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
     <h4 class="project-title">Cat and Dog Owner Classification</h4>
     <span class="project-date">September 2024</span>
 </div>
-- **Algorithms & Methods**: Logistic Regression, SVM, Decision Trees, TF-IDF  
+- <strong>Algorithms & Methods</strong>strong>: Logistic Regression, SVM, Decision Trees, TF-IDF  
 - Developed machine learning models to classify cat and dog owners based on user comments.
 - Preprocessed text data using TF-IDF to convert user comments into numerical features.
 - Achieved best results with SVM (C=10), with 98% accuracy for cat owners and 95% for dog owners.
@@ -71,7 +71,7 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
     <h4 class="project-title">Housing Price Prediction</h4>
     <span class="project-date">September 2024</span>
 </div>
-- **Algorithms & Methods**: Linear Regression
+- <strong>Algorithms & Methods</strong>strong>: Linear Regression
 - Developed a Linear Regression model using Scikit-learn to predict housing prices.
 - Preprocessed data by capping outliers and applied log transformation to normalize skewed distributions.
 - Achieved R² values of 0.864 on the validation set and 0.897 on the test set.
