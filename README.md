@@ -71,7 +71,7 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
     <h4 class="project-title">Housing Price Prediction</h4>
     <span class="project-date">September 2024</span>
 </div>
-- <strong>Algorithms & Methods</strong>strong>: Linear Regression
+- <strong>Algorithms & Methods</strong>: Linear Regression
 - Developed a Linear Regression model using Scikit-learn to predict housing prices.
 - Preprocessed data by capping outliers and applied log transformation to normalize skewed distributions.
 - Achieved R² values of 0.864 on the validation set and 0.897 on the test set.
