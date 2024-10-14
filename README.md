@@ -1,6 +1,6 @@
 # Data Scientist
 
-## 👋 Who is Drageon Lee?
+## 👋 Who is YongGeon (Drageon) Lee?
 
 <p class="justified-text">
 I am a <strong>Data scientist</strong> currently pursuing a Master's in Information Studies (Data Science track) at UT Austin. Originally from South Korea, I have a strong foundation in <strong>data engineering</strong> and <strong>quality engineering</strong>, and I am transitioning into <strong>machine learning</strong> to solve complex business challenges. As a former data engineer, I have extensive experience in collecting, managing, and processing <strong>large datasets</strong>. I aim to transform <strong>raw data</strong> into <strong>meaningful insights</strong> that drive decision-making and predictive modeling. Proficient in <strong>Python</strong>, <strong>SQL</strong>, and <strong>machine learning frameworks</strong> like <strong>Scikit-learn</strong> and <strong>TensorFlow</strong>, I am passionate about leveraging my skills to build scalable systems that not only analyze data but also generate actionable predictions. I have a global perspective and am eager to <strong>collaborate</strong> with diverse teams to drive <strong>innovation</strong> and <strong>development</strong>. Through hands-on projects, I am committed to enhancing my expertise in <strong>deep learning</strong> and <strong>data science</strong>, from <strong>data collection</strong> to <strong>analysis</strong> and <strong>prediction</strong>.
