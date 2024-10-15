@@ -49,31 +49,40 @@ Core Subjects: Math, Statistics, Chemical Engineering, Biological Engineering
 
 ## 🏆 Projects
 
+<div class="left-right"> 
+    <h4 class="project-title">Music Genre Classification with Different Preprocessing Approaches</h4> 
+    <span class="project-date">October 2024</span> 
+</div> 
+- <strong>Algorithms & Methods</strong>: Random Forest, Neural Network, XGBoost, TF-IDF<br>
+- Developed a multi-class classification model to predict music genres based on a dataset of audio features and metadata.<br>
+- Implemented two preprocessing approaches: handling multiple genres per track and simplifying to one genre per track.<br>
+- Achieved best results with Neural Network (Accuracy: 0.73, F1-Score: 0.72, AUC: 0.93 for Rock) using the simplified approach.
+
 <div class="left-right">
     <h4 class="project-title">Fraud Detection in Credit Card Transactions</h4>
     <span class="project-date">October 2024</span>
 </div>
-- <strong>Algorithm & Methods</strong>: Isolation Forest, Random Forest + SMOTE, XGBoost + SMOTE, PCA  
-- Developed machine learning models to detect fraudulent transactions in a highly imbalanced credit card dataset.
-- Implemented SMOTE to address class imbalance, achieving best results with XGBoost + SMOTE (Recall: 0.84, ROC-AUC: 0.97).
+- <strong>Algorithm & Methods</strong>: Isolation Forest, Random Forest + SMOTE, XGBoost + SMOTE, PCA<br>
+- Developed machine learning models to detect fraudulent transactions in a highly imbalanced credit card dataset.<br>
+- Implemented SMOTE to address class imbalance, achieving best results with XGBoost + SMOTE (Recall: 0.84, ROC-AUC: 0.97).<br>
 - Conducted confusion matrix analysis to optimize trade-offs between False Positives and False Negatives.
 
 <div class="left-right">
     <h4 class="project-title">Cat and Dog Owner Classification</h4>
     <span class="project-date">September 2024</span>
 </div>
-- <strong>Algorithms & Methods</strong>strong>: Logistic Regression, SVM, Decision Trees, TF-IDF  
-- Developed machine learning models to classify cat and dog owners based on user comments.
-- Preprocessed text data using TF-IDF to convert user comments into numerical features.
+- <strong>Algorithms & Methods</strong>: Logistic Regression, SVM, Decision Trees, TF-IDF<br>  
+- Developed machine learning models to classify cat and dog owners based on user comments.<br>
+- Preprocessed text data using TF-IDF to convert user comments into numerical features.<br>
 - Achieved best results with SVM (C=10), with 98% accuracy for cat owners and 95% for dog owners.
 
 <div class="left-right">
     <h4 class="project-title">Housing Price Prediction</h4>
     <span class="project-date">September 2024</span>
 </div>
-- <strong>Algorithms & Methods</strong>: Linear Regression
-- Developed a Linear Regression model using Scikit-learn to predict housing prices.
-- Preprocessed data by capping outliers and applied log transformation to normalize skewed distributions.
+- <strong>Algorithms & Methods</strong>: Linear Regression<br>
+- Developed a Linear Regression model using Scikit-learn to predict housing prices.<br>
+- Preprocessed data by capping outliers and applied log transformation to normalize skewed distributions.<br>
 - Achieved R² values of 0.864 on the validation set and 0.897 on the test set.
 
 ---
