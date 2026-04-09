@@ -823,6 +823,60 @@ footer a:hover {
 }
 
 /* ============================================================
+   PHASE SECTION HEADERS
+   ============================================================ */
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin: 3.5rem 0 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.phase-header:first-child {
+  margin-top: 0;
+}
+
+.phase-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.phase-material {
+  background: rgba(251, 191, 36, 0.12);
+  color: #d97706;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.phase-llm {
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+.phase-data {
+  background: rgba(52, 211, 153, 0.1);
+  color: #059669;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.phase-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* ============================================================
    HERO JOURNEY FLOW
    ============================================================ */
 .hero-journey {

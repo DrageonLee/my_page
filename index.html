@@ -44,26 +44,91 @@
 
   <!-- ====== PROJECTS ====== -->
   <main class="section" id="projects">
-    <div class="section-header fade-in">
-      <p class="section-label">Portfolio</p>
-      <h2 class="section-title">Projects</h2>
+    <!-- ── PHASE 1: Materials Informatics ──────────────────── -->
+    <div class="phase-header fade-in">
+      <div class="phase-badge phase-material">🧬 Materials Informatics</div>
+      <p class="phase-desc">Applying ML and computational methods to battery materials — rooted in 3 years of hands-on cathode R&amp;D at Umicore.</p>
     </div>
+    <div class="projects-grid stagger">
 
-    <!-- Tag Filter -->
-    <div class="filter-bar" id="filterBar">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="material">Materials AI</button>
-      <button class="filter-btn" data-filter="llm">LLM &amp; GenAI</button>
-      <button class="filter-btn" data-filter="graph">Graph ML</button>
-      <button class="filter-btn" data-filter="multi">Multimodal AI</button>
-      <button class="filter-btn" data-filter="data">Data Engineering</button>
-      <button class="filter-btn" data-filter="vision">Computer Vision</button>
+      <!-- CGCNN -->
+      <article class="project-card" data-tags="graph material" style="--card-accent: linear-gradient(135deg, #fbbf24, #f59e0b);">
+        <div class="card-meta">
+          <span class="card-org">Research</span>
+          <div class="card-icon">⚗️</div>
+        </div>
+        <h3 class="card-title">Cathode Stability Prediction (CGCNN)</h3>
+        <p class="card-desc">
+          Graph-based ML for thermodynamic stability prediction of cathode materials
+          using Materials Project and OQMD. Analyzed cross-database generalization
+          and domain shift via zero-shot and transfer learning approaches.
+        </p>
+        <div class="card-tags">
+          <span class="tag tag-graph">CGCNN</span>
+          <span class="tag tag-graph">GNN</span>
+          <span class="tag tag-material">Materials</span>
+          <span class="tag tag-material">DFT</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-org">Materials AI</span>
+        </div>
+      </article>
+
+      <!-- DFT+ML -->
+      <article class="project-card" data-tags="material" style="--card-accent: linear-gradient(135deg, #f59e0b, #fbbf24);">
+        <div class="card-meta">
+          <span class="card-org">Research</span>
+          <div class="card-icon">🔋</div>
+        </div>
+        <h3 class="card-title">Battery Materials Modeling: DFT + ML</h3>
+        <p class="card-desc">
+          DFT+U workflow with Quantum ESPRESSO for layered oxide cathode stability.
+          Linked computational results to ML screening pipelines, exploring
+          synthesis and cycling behavior through computational modeling.
+        </p>
+        <div class="card-tags">
+          <span class="tag tag-material">DFT</span>
+          <span class="tag tag-material">Materials</span>
+          <span class="tag tag-ml">Quantum ESPRESSO</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-org">Computational Chemistry</span>
+        </div>
+      </article>
+
+      <!-- Post-stroke GNN -->
+      <article class="project-card" data-tags="graph" style="--card-accent: linear-gradient(135deg, #22d3ee, #06b6d4);">
+        <div class="card-meta">
+          <span class="card-org">UT Austin</span>
+          <div class="card-icon">🧠</div>
+        </div>
+        <h3 class="card-title">Post-stroke Prediction with GNN + Explainability</h3>
+        <p class="card-desc">
+          Graph Transformer (TransformerConv) model for post-stroke outcome prediction
+          using ICD codes and clinical features. Benchmarked GNNExplainer, PGExplainer,
+          GSAT, and GIB for clinical decision support.
+        </p>
+        <div class="card-tags">
+          <span class="tag tag-graph">GNN</span>
+          <span class="tag tag-graph">XAI</span>
+          <span class="tag tag-ml">Healthcare AI</span>
+          <span class="tag tag-ml">PyTorch</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-org">Clinical AI</span>
+        </div>
+      </article>
+
+    </div><!-- /phase 1 grid -->
+
+    <!-- ── PHASE 2: AI & LLM ────────────────────────────────── -->
+    <div class="phase-header fade-in">
+      <div class="phase-badge phase-llm">🤖 AI &amp; LLM</div>
+      <p class="phase-desc">Building production-grade AI systems — RAG pipelines, agentic workflows, LLM evaluation, and multimodal models.</p>
     </div>
+    <div class="projects-grid stagger">
 
-    <!-- Cards Grid -->
-    <div class="projects-grid stagger" id="projectsGrid">
-
-      <!-- 1. Oxy Capstone -->
+      <!-- RAG Capstone -->
       <article class="project-card" data-tags="llm" style="--card-accent: linear-gradient(135deg, #6366f1, #22d3ee);">
         <div class="card-meta">
           <span class="card-org">UT Austin · Capstone</span>
@@ -88,7 +153,7 @@
         </div>
       </article>
 
-      <!-- 2. Surgical Tool Agent -->
+      <!-- Surgical Tool Agent -->
       <article class="project-card" data-tags="llm" style="--card-accent: linear-gradient(135deg, #6366f1, #a855f7);">
         <div class="card-meta">
           <span class="card-org">UT Austin</span>
@@ -110,7 +175,7 @@
         </div>
       </article>
 
-      <!-- 3. LLM QA Tool -->
+      <!-- LLM QA Tool -->
       <article class="project-card" data-tags="llm" style="--card-accent: linear-gradient(135deg, #a855f7, #6366f1);">
         <div class="card-meta">
           <span class="card-org">UT Austin</span>
@@ -132,7 +197,7 @@
         </div>
       </article>
 
-      <!-- 4. LLM Judge -->
+      <!-- LLM Judge -->
       <article class="project-card" data-tags="llm" style="--card-accent: linear-gradient(135deg, #22d3ee, #6366f1);">
         <div class="card-meta">
           <span class="card-org">UT Austin</span>
@@ -154,77 +219,7 @@
         </div>
       </article>
 
-      <!-- 5. Post-stroke GNN -->
-      <article class="project-card" data-tags="graph" style="--card-accent: linear-gradient(135deg, #22d3ee, #06b6d4);">
-        <div class="card-meta">
-          <span class="card-org">UT Austin</span>
-          <div class="card-icon">🧠</div>
-        </div>
-        <h3 class="card-title">Post-stroke Prediction with GNN + Explainability</h3>
-        <p class="card-desc">
-          Graph Transformer (TransformerConv) model for post-stroke outcome prediction
-          using ICD codes and clinical features. Benchmarked GNNExplainer, PGExplainer,
-          GSAT, and GIB for clinical decision support.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-graph">GNN</span>
-          <span class="tag tag-graph">XAI</span>
-          <span class="tag tag-ml">Healthcare AI</span>
-          <span class="tag tag-ml">PyTorch</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Clinical AI</span>
-        </div>
-      </article>
-
-      <!-- 6. Cathode CGCNN -->
-      <article class="project-card" data-tags="graph material"
-        style="--card-accent: linear-gradient(135deg, #fbbf24, #f59e0b);">
-        <div class="card-meta">
-          <span class="card-org">Research</span>
-          <div class="card-icon">⚗️</div>
-        </div>
-        <h3 class="card-title">Cathode Stability Prediction (CGCNN)</h3>
-        <p class="card-desc">
-          Graph-based ML for thermodynamic stability prediction of cathode materials
-          using Materials Project and OQMD. Analyzed cross-database generalization
-          and domain shift via zero-shot and transfer learning approaches.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-graph">CGCNN</span>
-          <span class="tag tag-graph">GNN</span>
-          <span class="tag tag-material">Materials</span>
-          <span class="tag tag-material">DFT</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Materials AI</span>
-        </div>
-      </article>
-
-      <!-- 7. Battery DFT -->
-      <article class="project-card" data-tags="material"
-        style="--card-accent: linear-gradient(135deg, #f59e0b, #fbbf24);">
-        <div class="card-meta">
-          <span class="card-org">Research</span>
-          <div class="card-icon">🔋</div>
-        </div>
-        <h3 class="card-title">Battery Materials Modeling: DFT + ML</h3>
-        <p class="card-desc">
-          DFT+U workflow with Quantum ESPRESSO for layered oxide cathode stability.
-          Linked computational results to ML screening pipelines, exploring
-          synthesis and cycling behavior through computational modeling.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-material">DFT</span>
-          <span class="tag tag-material">Materials</span>
-          <span class="tag tag-ml">Quantum ESPRESSO</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Computational Chemistry</span>
-        </div>
-      </article>
-
-      <!-- 8. Multimodal Music -->
+      <!-- Multimodal Music -->
       <article class="project-card" data-tags="multi" style="--card-accent: linear-gradient(135deg, #a855f7, #ec4899);">
         <div class="card-meta">
           <span class="card-org">UT Austin</span>
@@ -247,29 +242,16 @@
         </div>
       </article>
 
-      <!-- 9. ABPA Connect -->
-      <article class="project-card" data-tags="data" style="--card-accent: linear-gradient(135deg, #34d399, #10b981);">
-        <div class="card-meta">
-          <span class="card-org">ABPA</span>
-          <div class="card-icon">📊</div>
-        </div>
-        <h3 class="card-title">ABPA Connect — Data Integration Pipeline</h3>
-        <p class="card-desc">
-          Unified Givebutter and EveryAction data into BigQuery as a single source of truth.
-          Cleaned CRM/fundraising data, resolved cross-platform duplicates,
-          and built Looker Studio KPI dashboards for end-to-end reporting.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-data">BigQuery</span>
-          <span class="tag tag-data">Looker Studio</span>
-          <span class="tag tag-data">ETL</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Data Engineering</span>
-        </div>
-      </article>
+    </div><!-- /phase 2 grid -->
 
-      <!-- 10. Circle Platform -->
+    <!-- ── PHASE 3: Data Engineering ────────────────────────── -->
+    <div class="phase-header fade-in">
+      <div class="phase-badge phase-data">🔧 Data Engineering</div>
+      <p class="phase-desc">Building scalable data pipelines, APIs, and analytics systems — production experience at Circle Platform and ABPA.</p>
+    </div>
+    <div class="projects-grid stagger">
+
+      <!-- Circle Platform -->
       <article class="project-card" data-tags="data" style="--card-accent: linear-gradient(135deg, #10b981, #22d3ee);">
         <div class="card-meta">
           <span class="card-org">Circle Platform</span>
@@ -292,9 +274,30 @@
         </div>
       </article>
 
-      <!-- 11. Image AI -->
-      <article class="project-card" data-tags="vision"
-        style="--card-accent: linear-gradient(135deg, #f472b6, #a855f7);">
+      <!-- ABPA Connect -->
+      <article class="project-card" data-tags="data" style="--card-accent: linear-gradient(135deg, #34d399, #10b981);">
+        <div class="card-meta">
+          <span class="card-org">ABPA</span>
+          <div class="card-icon">📊</div>
+        </div>
+        <h3 class="card-title">ABPA Connect — Data Integration Pipeline</h3>
+        <p class="card-desc">
+          Unified Givebutter and EveryAction data into BigQuery as a single source of truth.
+          Cleaned CRM/fundraising data, resolved cross-platform duplicates,
+          and built Looker Studio KPI dashboards for end-to-end reporting.
+        </p>
+        <div class="card-tags">
+          <span class="tag tag-data">BigQuery</span>
+          <span class="tag tag-data">Looker Studio</span>
+          <span class="tag tag-data">ETL</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-org">Data Engineering</span>
+        </div>
+      </article>
+
+      <!-- Image AI -->
+      <article class="project-card" data-tags="vision" style="--card-accent: linear-gradient(135deg, #f472b6, #a855f7);">
         <div class="card-meta">
           <span class="card-org">Circle Platform</span>
           <div class="card-icon">🖼️</div>
@@ -315,71 +318,7 @@
         </div>
       </article>
 
-      <!-- 12. Fraud Detection
-      <article class="project-card" data-tags="ml" style="--card-accent: linear-gradient(135deg, #94a3b8, #64748b);">
-        <div class="card-meta">
-          <span class="card-org">UT Austin · Coursework</span>
-          <div class="card-icon">🔐</div>
-        </div>
-        <h3 class="card-title">Fraud Detection in Credit Card Transactions</h3>
-        <p class="card-desc">
-          ML models (Isolation Forest, Random Forest, XGBoost) with SMOTE for class imbalance.
-          Best result: XGBoost+SMOTE with Recall 0.84, ROC-AUC 0.97.
-          PCA for dimensionality reduction.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-ml">XGBoost</span>
-          <span class="tag tag-ml">SMOTE</span>
-          <span class="tag tag-ml">Scikit-learn</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">October 2024</span>
-        </div>
-      </article> -->
-
-      <!-- 13. Cat/Dog NLP -->
-      <!-- <article class="project-card" data-tags="ml" style="--card-accent: linear-gradient(135deg, #64748b, #94a3b8);">
-        <div class="card-meta">
-          <span class="card-org">UT Austin · Coursework</span>
-          <div class="card-icon">🐾</div>
-        </div>
-        <h3 class="card-title">Cat &amp; Dog Owner Classification (NLP)</h3>
-        <p class="card-desc">
-          Text classification using TF-IDF + SVM, Logistic Regression, Decision Trees.
-          Best model: SVM (C=10) with 98% accuracy for cat owners,
-          95% for dog owners.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-ml">SVM</span>
-          <span class="tag tag-ml">TF-IDF</span>
-          <span class="tag tag-ml">NLP</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">September 2024</span>
-        </div>
-      </article> -->
-
-      <!-- 14. Housing Price -->
-      <!-- <article class="project-card" data-tags="ml" style="--card-accent: linear-gradient(135deg, #475569, #64748b);">
-        <div class="card-meta">
-          <span class="card-org">UT Austin · Coursework</span>
-          <div class="card-icon">🏠</div>
-        </div>
-        <h3 class="card-title">Housing Price Prediction</h3>
-        <p class="card-desc">
-          Linear Regression model with outlier capping and log transformation for
-          skewed distributions. Achieved R² of 0.864 on validation, 0.897 on test set.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-ml">Linear Regression</span>
-          <span class="tag tag-ml">Scikit-learn</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">September 2024</span>
-        </div>
-      </article> -->
-
-    </div><!-- /projects-grid -->
+    </div><!-- /phase 3 grid -->
   </main>
 
   <!-- ====== FOOTER ====== -->
