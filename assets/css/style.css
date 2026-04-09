@@ -823,6 +823,81 @@ footer a:hover {
 }
 
 /* ============================================================
+   HERO JOURNEY FLOW
+   ============================================================ */
+.hero-journey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem auto 1.75rem;
+  max-width: 620px;
+}
+
+.journey-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 120px;
+}
+
+.journey-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.journey-label {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.journey-sub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.journey-arrow {
+  font-size: 1.1rem;
+  color: var(--accent-indigo);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   DOMAIN NOTE CALLOUT
+   ============================================================ */
+.domain-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  background: rgba(99, 102, 241, 0.05);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-left: 3px solid var(--accent-indigo);
+  border-radius: 8px;
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.domain-note-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.domain-note strong {
+  color: var(--accent-indigo);
+}
+
+/* ============================================================
    SCROLL ANIMATIONS
    ============================================================ */
 .fade-in {
