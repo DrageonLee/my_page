@@ -17,7 +17,36 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll(); // run once on load
   }
 
-  // ── 2. Phase Tab Navigation ────────────────────────────────
+  // ── 2. Main Section Tabs (Projects / Experience / Skills) ─
+  const mainTabs = document.getElementById('mainTabs');
+
+  function showMainPanel(name) {
+    document.querySelectorAll('.main-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.main-tab').forEach(t => t.classList.remove('active'));
+    const panel = document.getElementById(`main-${name}`);
+    if (panel) {
+      panel.classList.add('active');
+      setTimeout(() => {
+        panel.querySelectorAll('.stagger > *').forEach((el, i) => {
+          el.classList.remove('visible');
+          el.style.transitionDelay = `${i * 60}ms`;
+          setTimeout(() => el.classList.add('visible'), 20);
+        });
+      }, 30);
+    }
+    mainTabs?.querySelector(`[data-main="${name}"]`)?.classList.add('active');
+  }
+
+  if (mainTabs) {
+    mainTabs.addEventListener('click', e => {
+      const tab = e.target.closest('.main-tab');
+      if (!tab) return;
+      showMainPanel(tab.dataset.main);
+    });
+    showMainPanel('projects');
+  }
+
+  // ── 3. Phase Tab Navigation ────────────────────────────────
   const phaseTabs = document.getElementById('phaseTabs');
 
   function showPhasePanel(phase) {

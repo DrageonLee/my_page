@@ -46,19 +46,30 @@
           with a focus on <strong>Computational Materials Informatics</strong>.
         </p>
         <div class="hero-cta">
-          <a href="about.html" class="btn btn-primary">About Me →</a>
+          <a href="#content" class="btn btn-primary">View Portfolio ↓</a>
           <a href="https://github.com/DrageonLee" target="_blank" class="btn btn-outline">GitHub ↗</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== PROJECTS ====== -->
-  <main class="section" id="projects">
-    <div class="section-header fade-in">
-      <p class="section-label">Portfolio</p>
-      <h2 class="section-title">Projects</h2>
+  <!-- ====== MAIN CONTENT TABS ====== -->
+  <div class="content-wrap" id="content">
+
+    <!-- Top-level tab bar -->
+    <div class="main-tabs fade-in" id="mainTabs">
+      <button class="main-tab active" data-main="projects">🗂️ Projects</button>
+      <button class="main-tab" data-main="experience">💼 Experience</button>
+      <button class="main-tab" data-main="skills">🛠️ Skills</button>
     </div>
+
+    <!-- ══ PANEL: PROJECTS ══════════════════════════════════ -->
+    <div class="main-panel active" id="main-projects">
+      <div class="section" id="projects">
+        <div class="section-header fade-in">
+          <p class="section-label">Portfolio</p>
+          <h2 class="section-title">Projects</h2>
+        </div>
 
     <!-- ── Phase Tab Bar ── -->
     <div class="phase-tabs fade-in" id="phaseTabs">
@@ -333,9 +344,192 @@
         </article>
 
       </div>
-    </div>
+    </div><!-- /phase-data -->
+      </div><!-- /section -->
+    </div><!-- /main-projects -->
 
-  </main>
+    <!-- ══ PANEL: EXPERIENCE ════════════════════════════════ -->
+    <div class="main-panel" id="main-experience">
+      <div class="section">
+
+        <!-- Timeline -->
+        <div class="section-header fade-in">
+          <p class="section-label">Career</p>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="timeline fade-in">
+
+          <!-- UT Austin -->
+          <div class="timeline-item">
+            <p class="timeline-date">August 2024 – Present</p>
+            <p class="timeline-role">Graduate Researcher &amp; AI Lab Instructor</p>
+            <p class="timeline-org">The University of Texas at Austin</p>
+            <ul class="timeline-bullets">
+              <li>Led AI lab sessions on Hugging Face Transformers, LLM fine-tuning, computer vision, and explainable AI</li>
+              <li>Mentored student teams on EHR analysis, medical NLP, and healthcare AI projects</li>
+              <li>Developed coursework and materials for SQL, GenAI, and model evaluation</li>
+              <li>Conducted research on GNN-based clinical prediction, multimodal AI, and RAG systems</li>
+              <li>Built and evaluated LLM-based tools for QA automation and tutoring assessment</li>
+            </ul>
+          </div>
+
+          <!-- Circle Platform -->
+          <div class="timeline-item">
+            <p class="timeline-date">April 2022 – June 2024</p>
+            <p class="timeline-role">Data Part Leader</p>
+            <p class="timeline-org">Circle Platform</p>
+            <ul class="timeline-bullets">
+              <li>Developed 100+ APIs accelerating data collection speed by 3× (10 min → 3 min)</li>
+              <li>Built AWS-based data pipelines and improved MariaDB event log performance by 50%</li>
+              <li>Designed demand forecasting models with Scikit-learn, driving user base growth from 1,100 to 2,300</li>
+              <li>Evaluated and improved AI image editing features: object removal, super-resolution, diffusion styling</li>
+              <li>Implemented pseudonymization techniques using Hadoop MapReduce for large-scale data</li>
+              <li>Conducted consumer behavior sequence analysis and optimized search/pattern algorithms</li>
+            </ul>
+          </div>
+
+          <!-- Umicore -->
+          <div class="timeline-item">
+            <p class="timeline-date">August 2018 – October 2021</p>
+            <p class="timeline-role">Battery Materials Domain Expert &nbsp;<span style="font-weight:400;color:var(--text-muted);font-size:0.85rem;">· Quality Engineer</span></p>
+            <p class="timeline-org">Umicore</p>
+            <ul class="timeline-bullets">
+              <li>Analyzed quality issues in high-nickel cathode materials: structural instability, oxygen loss, microcracks</li>
+              <li>Characterized moisture effects, residual lithium imbalance, and Li₂CO₃/LiOH-related defects using XRD and coin cell tests</li>
+              <li>Participated in tungsten additive development for high-nickel cathode optimization</li>
+              <li>Analyzed lab-to-pilot scale-up gaps and process condition optimization</li>
+              <li>Authored 200+ quality reports including 8D analysis; led Japan customer audits</li>
+              <li>Applied Six Sigma for defect rate management and process control</li>
+            </ul>
+            <div class="domain-note">
+              <span class="domain-note-icon">🔗</span>
+              <span>This hands-on expertise in battery cathode materials directly informed the
+              <strong>GNN-based Cathode Stability Prediction</strong> and <strong>DFT+ML</strong> research projects,
+              bridging real-world materials knowledge with computational AI.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="height: 3rem;"></div>
+        <div class="divider"></div>
+        <div style="height: 3rem;"></div>
+
+        <!-- Education -->
+        <div class="section-header fade-in">
+          <p class="section-label">Academic</p>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="education-grid stagger">
+          <div class="edu-card">
+            <p class="edu-degree">M.S. in Information Studies</p>
+            <p class="edu-school">The University of Texas at Austin</p>
+            <p class="edu-period">August 2024 – Expected May 2026</p>
+            <p class="edu-subjects">Data Management · Machine Learning · Natural Language Processing · Cloud Infrastructure</p>
+          </div>
+          <div class="edu-card">
+            <p class="edu-degree">B.S. in Fine Chemical Engineering</p>
+            <p class="edu-school">Chungnam National University</p>
+            <p class="edu-period">March 2010 – August 2017</p>
+            <p class="edu-subjects">Mathematics · Statistics · Chemical Engineering · Biological Engineering</p>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /main-experience -->
+
+    <!-- ══ PANEL: SKILLS ════════════════════════════════════ -->
+    <div class="main-panel" id="main-skills">
+      <div class="section">
+        <div class="section-header fade-in">
+          <p class="section-label">Technical</p>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-section fade-in">
+
+          <div>
+            <p class="skill-group-label">Languages</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">MATLAB</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="skill-group-label">ML / DL</p>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">PyTorch Geometric</span>
+              <span class="skill-tag">Hugging Face</span>
+              <span class="skill-tag">XGBoost</span>
+              <span class="skill-tag">NLTK</span>
+              <span class="skill-tag">OpenCV</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="skill-group-label">LLM &amp; GenAI</p>
+            <div class="skill-tags">
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">Gemini</span>
+              <span class="skill-tag">AWS Bedrock</span>
+              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">LLM Evaluation</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="skill-group-label">Data Engineering</p>
+            <div class="skill-tags">
+              <span class="skill-tag">pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">BigQuery</span>
+              <span class="skill-tag">MariaDB</span>
+              <span class="skill-tag">Looker Studio</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Hadoop</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="skill-group-label">Cloud &amp; Infrastructure</p>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">GCP</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Terraform</span>
+              <span class="skill-tag">AWS Lambda</span>
+              <span class="skill-tag">OpenSearch</span>
+              <span class="skill-tag">Step Functions</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="skill-group-label">Materials &amp; Scientific</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Quantum ESPRESSO</span>
+              <span class="skill-tag">DFT+U</span>
+              <span class="skill-tag">XRD Analysis</span>
+              <span class="skill-tag">CGCNN</span>
+              <span class="skill-tag">Six Sigma</span>
+              <span class="skill-tag">8D Report</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- /main-skills -->
+
+  </div><!-- /content-wrap -->
 
   <!-- ====== FOOTER ====== -->
   <footer>

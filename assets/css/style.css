@@ -883,6 +883,60 @@ footer a:hover {
 }
 
 /* ============================================================
+   MAIN SECTION TABS (Projects / Experience / Skills)
+   ============================================================ */
+.content-wrap {
+  scroll-margin-top: var(--nav-height);
+}
+
+.main-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem 2rem 0;
+  flex-wrap: wrap;
+}
+
+.main-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1.6rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border-subtle);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition: all var(--transition);
+}
+
+.main-tab:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.main-tab.active {
+  background: var(--accent-grad);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 3px 20px rgba(99, 102, 241, 0.4);
+}
+
+.main-panel {
+  display: none;
+}
+
+.main-panel.active {
+  display: block;
+  animation: panelFadeIn 0.35s ease;
+}
+
+/* ============================================================
    PHASE TAB NAVIGATION
    ============================================================ */
 .phase-tabs {
