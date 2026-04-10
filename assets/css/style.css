@@ -169,8 +169,68 @@ img {
   z-index: 1;
   padding: calc(var(--nav-height) + 5rem) 2rem 5rem;
   text-align: center;
-  max-width: 800px;
+}
+
+/* Two-column inner layout */
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  max-width: 900px;
   margin: 0 auto;
+  text-align: left;
+}
+
+/* Photo */
+.hero-photo-wrap {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.hero-photo-wrap::before {
+  display: none;
+}
+
+.hero-photo-wrap::after {
+  content: '';
+  position: absolute;
+  inset: -18px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99,102,241,0.18), transparent 70%);
+  z-index: 0;
+}
+
+.hero-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Text side */
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  text-align: left;
+}
+
+.hero-text .hero-title {
+  text-align: left;
+}
+
+.hero-text .hero-desc {
+  text-align: left;
+  margin: 0 0 2rem;
+}
+
+.hero-text .hero-cta {
+  justify-content: flex-start;
 }
 
 /* Ambient glow blobs */
@@ -823,7 +883,74 @@ footer a:hover {
 }
 
 /* ============================================================
-   PHASE SECTION HEADERS
+   PHASE TAB NAVIGATION
+   ============================================================ */
+.phase-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.phase-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.phase-tab:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.phase-tab.active {
+  background: var(--accent-grad);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 2px 16px rgba(99, 102, 241, 0.35);
+}
+
+/* Panels */
+.phase-panel {
+  display: none;
+}
+
+.phase-panel.active {
+  display: block;
+  animation: panelFadeIn 0.3s ease;
+}
+
+@keyframes panelFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.phase-panel-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  max-width: 680px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================
+   PHASE SECTION HEADERS (scroll layout — kept for reference)
    ============================================================ */
 .phase-header {
   display: flex;
@@ -869,11 +996,43 @@ footer a:hover {
   border: 1px solid rgba(52, 211, 153, 0.3);
 }
 
+.phase-battery {
+  background: rgba(251, 146, 60, 0.12);
+  color: #ea580c;
+  border: 1px solid rgba(251, 146, 60, 0.3);
+}
+
 .phase-desc {
   font-size: 0.875rem;
   color: var(--text-muted);
   line-height: 1.6;
   flex: 1;
+}
+
+/* Experience card bullet list */
+.card-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.card-bullets li {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.55;
+}
+
+.card-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #ea580c;
+  font-size: 0.7rem;
+  top: 0.15rem;
 }
 
 /* ============================================================
@@ -982,6 +1141,22 @@ footer a:hover {
 @media (max-width: 768px) {
   .nav-links {
     gap: 1.25rem;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-text h1,
+  .hero-text .hero-title,
+  .hero-text .hero-desc {
+    text-align: center;
+  }
+
+  .hero-text .hero-cta {
+    justify-content: center;
   }
 
   .projects-grid {

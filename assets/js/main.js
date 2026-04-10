@@ -17,35 +17,37 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll(); // run once on load
   }
 
-  // ── 2. Tag Filter (index.html) ─────────────────────────────
-  const filterBar   = document.getElementById('filterBar');
-  const projectsGrid = document.getElementById('projectsGrid');
+  // ── 2. Phase Tab Navigation ────────────────────────────────
+  const phaseTabs = document.getElementById('phaseTabs');
 
-  if (filterBar && projectsGrid) {
-    const cards = Array.from(projectsGrid.querySelectorAll('.project-card'));
-
-    filterBar.addEventListener('click', (e) => {
-      const btn = e.target.closest('.filter-btn');
-      if (!btn) return;
-
-      // Update active button
-      filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.dataset.filter;
-
-      cards.forEach(card => {
-        const tags = (card.dataset.tags || '').split(' ');
-        if (filter === 'all' || tags.includes(filter)) {
-          card.classList.remove('hidden');
-          // Re-trigger animation
-          card.classList.remove('visible');
-          requestAnimationFrame(() => card.classList.add('visible'));
-        } else {
-          card.classList.add('hidden');
-        }
+  function showPhasePanel(phase) {
+    // Hide all panels
+    document.querySelectorAll('.phase-panel').forEach(p => p.classList.remove('active'));
+    // Show selected
+    const panel = document.getElementById(`phase-${phase}`);
+    if (!panel) return;
+    panel.classList.add('active');
+    // Trigger stagger animations after display:block renders
+    setTimeout(() => {
+      panel.querySelectorAll('.stagger > *').forEach((card, i) => {
+        card.classList.remove('visible');
+        card.style.transitionDelay = `${i * 70}ms`;
+        setTimeout(() => card.classList.add('visible'), 20);
       });
+    }, 30);
+  }
+
+  if (phaseTabs) {
+    phaseTabs.addEventListener('click', (e) => {
+      const tab = e.target.closest('.phase-tab');
+      if (!tab) return;
+      phaseTabs.querySelectorAll('.phase-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      showPhasePanel(tab.dataset.phase);
     });
+
+    // Show default panel immediately on load
+    showPhasePanel('battery');
   }
 
   // ── 3. Scroll-triggered fade-in ────────────────────────────

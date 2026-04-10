@@ -30,295 +30,311 @@
 
   <!-- ====== HERO ====== -->
   <section class="hero fade-in" id="hero">
-    <h1>Drageon Lee</h1>
-    <p class="hero-title">ML Researcher &nbsp;·&nbsp; Computational Materials Informatics</p>
-    <p class="hero-desc">
-      Bridging battery materials domain expertise and data engineering with AI/ML research,
-      with a focus on <strong>Computational Materials Informatics</strong>.
-    </p>
-    <div class="hero-cta">
-      <a href="about.html" class="btn btn-primary">About Me →</a>
-      <a href="https://github.com/DrageonLee" target="_blank" class="btn btn-outline">GitHub ↗</a>
+    <div class="hero-inner">
+      <!-- Photo -->
+      <div class="hero-photo-wrap">
+        <!-- <img src="assets/img/profile_img.JPG" alt="Drageon Lee" class="hero-photo" /> -->
+        <img src="assets/img/my_profile_photo.JPG" alt="Drageon Lee" class="hero-photo" />
+      </div>
+      <!-- Text -->
+      <div class="hero-text">
+        <!-- <div class="hero-badge">Available for Research &amp; Collaboration</div> -->
+        <h1>Drageon Lee</h1>
+        <p class="hero-title">ML Researcher &nbsp;·&nbsp; Computational Materials Informatics</p>
+        <p class="hero-desc">
+          Bridging battery materials domain expertise and data engineering with AI/ML research,
+          with a focus on <strong>Computational Materials Informatics</strong>.
+        </p>
+        <div class="hero-cta">
+          <a href="about.html" class="btn btn-primary">About Me →</a>
+          <a href="https://github.com/DrageonLee" target="_blank" class="btn btn-outline">GitHub ↗</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ====== PROJECTS ====== -->
   <main class="section" id="projects">
-    <!-- ── PHASE 1: Materials Informatics ──────────────────── -->
-    <div class="phase-header fade-in">
-      <div class="phase-badge phase-material">🧬 Materials Informatics</div>
-      <p class="phase-desc">Applying ML and computational methods to battery materials — rooted in 3 years of hands-on cathode R&amp;D at Umicore.</p>
+    <div class="section-header fade-in">
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title">Projects</h2>
     </div>
-    <div class="projects-grid stagger">
 
-      <!-- CGCNN -->
-      <article class="project-card" data-tags="graph material" style="--card-accent: linear-gradient(135deg, #fbbf24, #f59e0b);">
-        <div class="card-meta">
-          <span class="card-org">Research</span>
-          <div class="card-icon">⚗️</div>
-        </div>
-        <h3 class="card-title">Cathode Stability Prediction (CGCNN)</h3>
-        <p class="card-desc">
-          Graph-based ML for thermodynamic stability prediction of cathode materials
-          using Materials Project and OQMD. Analyzed cross-database generalization
-          and domain shift via zero-shot and transfer learning approaches.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-graph">CGCNN</span>
-          <span class="tag tag-graph">GNN</span>
-          <span class="tag tag-material">Materials</span>
-          <span class="tag tag-material">DFT</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Materials AI</span>
-        </div>
-      </article>
-
-      <!-- DFT+ML -->
-      <article class="project-card" data-tags="material" style="--card-accent: linear-gradient(135deg, #f59e0b, #fbbf24);">
-        <div class="card-meta">
-          <span class="card-org">Research</span>
-          <div class="card-icon">🔋</div>
-        </div>
-        <h3 class="card-title">Battery Materials Modeling: DFT + ML</h3>
-        <p class="card-desc">
-          DFT+U workflow with Quantum ESPRESSO for layered oxide cathode stability.
-          Linked computational results to ML screening pipelines, exploring
-          synthesis and cycling behavior through computational modeling.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-material">DFT</span>
-          <span class="tag tag-material">Materials</span>
-          <span class="tag tag-ml">Quantum ESPRESSO</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Computational Chemistry</span>
-        </div>
-      </article>
-
-      <!-- Post-stroke GNN -->
-      <article class="project-card" data-tags="graph" style="--card-accent: linear-gradient(135deg, #22d3ee, #06b6d4);">
-        <div class="card-meta">
-          <span class="card-org">UT Austin</span>
-          <div class="card-icon">🧠</div>
-        </div>
-        <h3 class="card-title">Post-stroke Prediction with GNN + Explainability</h3>
-        <p class="card-desc">
-          Graph Transformer (TransformerConv) model for post-stroke outcome prediction
-          using ICD codes and clinical features. Benchmarked GNNExplainer, PGExplainer,
-          GSAT, and GIB for clinical decision support.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-graph">GNN</span>
-          <span class="tag tag-graph">XAI</span>
-          <span class="tag tag-ml">Healthcare AI</span>
-          <span class="tag tag-ml">PyTorch</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Clinical AI</span>
-        </div>
-      </article>
-
-    </div><!-- /phase 1 grid -->
-
-    <!-- ── PHASE 2: AI & LLM ────────────────────────────────── -->
-    <div class="phase-header fade-in">
-      <div class="phase-badge phase-llm">🤖 AI &amp; LLM</div>
-      <p class="phase-desc">Building production-grade AI systems — RAG pipelines, agentic workflows, LLM evaluation, and multimodal models.</p>
+    <!-- ── Phase Tab Bar ── -->
+    <div class="phase-tabs fade-in" id="phaseTabs">
+      <button class="phase-tab active" data-phase="battery">🔋 Battery Field</button>
+      <button class="phase-tab" data-phase="data">📊 Data Engineering</button>
+      <button class="phase-tab" data-phase="aiml">🧑‍💻 AI &amp; ML</button>
+      <button class="phase-tab" data-phase="informatics">🧬 Materials Informatics</button>
     </div>
-    <div class="projects-grid stagger">
 
-      <!-- RAG Capstone -->
-      <article class="project-card" data-tags="llm" style="--card-accent: linear-gradient(135deg, #6366f1, #22d3ee);">
-        <div class="card-meta">
-          <span class="card-org">UT Austin · Capstone</span>
-          <div class="card-icon">🔍</div>
-        </div>
-        <h3 class="card-title">Hybrid Retrieval for Domain-Specific Search</h3>
-        <p class="card-desc">
-          End-to-end RAG system on AWS combining BM25 keyword search with vector search.
-          Built with Terraform, OpenSearch Serverless, Lambda, Step Functions, and Bedrock.
-          Agentic workflow for orchestration and evaluation.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-llm">RAG</span>
-          <span class="tag tag-llm">LangChain</span>
-          <span class="tag tag-llm">Bedrock</span>
-          <span class="tag tag-data">AWS</span>
-          <span class="tag tag-data">Terraform</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Oxy Capstone</span>
-          <a href="https://github.com/DrageonLee" target="_blank" class="card-link">GitHub ↗</a>
-        </div>
-      </article>
-
-      <!-- Surgical Tool Agent -->
-      <article class="project-card" data-tags="llm" style="--card-accent: linear-gradient(135deg, #6366f1, #a855f7);">
-        <div class="card-meta">
-          <span class="card-org">UT Austin</span>
-          <div class="card-icon">🏥</div>
-        </div>
-        <h3 class="card-title">Surgical Tool Search Agent</h3>
-        <p class="card-desc">
-          Search agent for surgical and medical tool queries using LangChain agents.
-          Designed retrieval pipeline for accuracy, usability, and workflow efficiency
-          in medical information retrieval.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-llm">LangChain</span>
-          <span class="tag tag-llm">Agents</span>
-          <span class="tag tag-llm">RAG</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Healthcare AI</span>
-        </div>
-      </article>
-
-      <!-- LLM QA Tool -->
-      <article class="project-card" data-tags="llm" style="--card-accent: linear-gradient(135deg, #a855f7, #6366f1);">
-        <div class="card-meta">
-          <span class="card-org">UT Austin</span>
-          <div class="card-icon">🛠️</div>
-        </div>
-        <h3 class="card-title">LLM-based QA Tool &amp; Defect Analytics</h3>
-        <p class="card-desc">
-          LLM-powered QA automation for error detection, root cause classification,
-          and triage support. Includes Power BI dashboard for defect analytics and
-          operational priority visualization.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-llm">LLM</span>
-          <span class="tag tag-data">Power BI</span>
-          <span class="tag tag-ml">Analytics</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">QA Automation</span>
-        </div>
-      </article>
-
-      <!-- LLM Judge -->
-      <article class="project-card" data-tags="llm" style="--card-accent: linear-gradient(135deg, #22d3ee, #6366f1);">
-        <div class="card-meta">
-          <span class="card-org">UT Austin</span>
-          <div class="card-icon">📚</div>
-        </div>
-        <h3 class="card-title">Guided Learning Evaluation / LLM Judge</h3>
-        <p class="card-desc">
-          Evaluated Gemini's guided tutoring mode against Bloom's Taxonomy across 60 tasks.
-          Designed LLM Judge agent assessing pedagogical alignment, Socratic guidance,
-          and conceptual reinforcement for SQL learning.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-llm">Gemini</span>
-          <span class="tag tag-llm">LLM Judge</span>
-          <span class="tag tag-ml">Evaluation</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">EdTech AI</span>
-        </div>
-      </article>
-
-      <!-- Multimodal Music -->
-      <article class="project-card" data-tags="multi" style="--card-accent: linear-gradient(135deg, #a855f7, #ec4899);">
-        <div class="card-meta">
-          <span class="card-org">UT Austin</span>
-          <div class="card-icon">🎵</div>
-        </div>
-        <h3 class="card-title">Multimodal Music Emotion Recognition</h3>
-        <p class="card-desc">
-          Audio-text multimodal model for music emotion recognition using AST and BERT.
-          Evaluated on MERGE and PMEmo datasets, extended to cross-modal retrieval
-          and emotion-based music recommendation via cosine similarity.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-multi">AST</span>
-          <span class="tag tag-multi">BERT</span>
-          <span class="tag tag-multi">Multimodal</span>
-          <span class="tag tag-ml">Recommendation</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Multimodal AI</span>
-        </div>
-      </article>
-
-    </div><!-- /phase 2 grid -->
-
-    <!-- ── PHASE 3: Data Engineering ────────────────────────── -->
-    <div class="phase-header fade-in">
-      <div class="phase-badge phase-data">🔧 Data Engineering</div>
-      <p class="phase-desc">Building scalable data pipelines, APIs, and analytics systems — production experience at Circle Platform and ABPA.</p>
+    <!-- ── Panel: Battery Field ── -->
+    <div class="phase-panel active" id="phase-battery">
+      <div class="projects-grid stagger" id="grid-battery">
+        <article class="project-card project-card--experience"
+          style="--card-accent: linear-gradient(135deg, #fb923c, #f97316);">
+          <div class="card-meta">
+            <span class="card-org">Umicore &nbsp;·&nbsp; 2018-2021</span>
+            <div class="card-icon">⚗️</div>
+          </div>
+          <h3 class="card-title">High-Nickel Cathode Materials R&amp;D</h3>
+          <ul class="card-bullets">
+            <li>Analyzed quality issues in high-nickel cathode materials: structural instability, oxygen loss,
+              microcracks</li>
+            <li>Participated in tungsten additive development for high-nickel cathode optimization</li>
+            <li>Interpreted XRD and coin cell test results; authored 200+ quality &amp; 8D reports</li>
+            <li>Analyzed lab-to-pilot scale-up gaps for process condition optimization</li>
+          </ul>
+          <div class="card-tags">
+            <span class="tag tag-material">High-Ni Cathode</span>
+            <span class="tag tag-material">XRD</span>
+            <span class="tag tag-material">Six Sigma</span>
+            <span class="tag tag-ml">8D Report</span>
+          </div>
+          <div class="card-footer">
+            <span class="card-org">Battery Materials</span>
+          </div>
+        </article>
+      </div>
     </div>
-    <div class="projects-grid stagger">
 
-      <!-- Circle Platform -->
-      <article class="project-card" data-tags="data" style="--card-accent: linear-gradient(135deg, #10b981, #22d3ee);">
-        <div class="card-meta">
-          <span class="card-org">Circle Platform</span>
-          <div class="card-icon">⚡</div>
-        </div>
-        <h3 class="card-title">API Platform &amp; Demand Forecasting Engine</h3>
-        <p class="card-desc">
-          Developed 100+ APIs accelerating data collection 3x. Built AWS data pipelines,
-          MariaDB query optimization (50% faster processing), and demand forecasting
-          models with Scikit-learn that grew the user base from 1,100 to 2,300.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-data">AWS</span>
-          <span class="tag tag-data">MariaDB</span>
-          <span class="tag tag-ml">Scikit-learn</span>
-          <span class="tag tag-data">Pipeline</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Data Engineering</span>
-        </div>
-      </article>
+    <!-- ── Panel: Materials Informatics ── -->
+    <div class="phase-panel" id="phase-informatics">
+      <div class="projects-grid stagger" id="grid-informatics">
 
-      <!-- ABPA Connect -->
-      <article class="project-card" data-tags="data" style="--card-accent: linear-gradient(135deg, #34d399, #10b981);">
-        <div class="card-meta">
-          <span class="card-org">ABPA</span>
-          <div class="card-icon">📊</div>
-        </div>
-        <h3 class="card-title">ABPA Connect — Data Integration Pipeline</h3>
-        <p class="card-desc">
-          Unified Givebutter and EveryAction data into BigQuery as a single source of truth.
-          Cleaned CRM/fundraising data, resolved cross-platform duplicates,
-          and built Looker Studio KPI dashboards for end-to-end reporting.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-data">BigQuery</span>
-          <span class="tag tag-data">Looker Studio</span>
-          <span class="tag tag-data">ETL</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Data Engineering</span>
-        </div>
-      </article>
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #fbbf24, #f59e0b);">
+          <div class="card-meta">
+            <span class="card-org">Research</span>
+            <div class="card-icon">⚗️</div>
+          </div>
+          <h3 class="card-title">Cathode Stability Prediction (CGCNN)</h3>
+          <p class="card-desc">
+            Graph-based ML for thermodynamic stability prediction of cathode materials
+            using Materials Project and OQMD. Analyzed cross-database generalization
+            and domain shift via zero-shot and transfer learning approaches.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-graph">CGCNN</span>
+            <span class="tag tag-graph">GNN</span>
+            <span class="tag tag-material">Materials</span>
+            <span class="tag tag-material">DFT</span>
+          </div>
+          <div class="card-footer"><span class="card-org">Materials AI</span></div>
+        </article>
 
-      <!-- Image AI -->
-      <article class="project-card" data-tags="vision" style="--card-accent: linear-gradient(135deg, #f472b6, #a855f7);">
-        <div class="card-meta">
-          <span class="card-org">Circle Platform</span>
-          <div class="card-icon">🖼️</div>
-        </div>
-        <h3 class="card-title">Image AI — Diffusion &amp; Style Feature Dev</h3>
-        <p class="card-desc">
-          Evaluated and improved AI image editing quality including object/background removal,
-          super-resolution, and diffusion-style editing. Automated manual QA processes
-          and iterated through tuning/testing for stable output.
-        </p>
-        <div class="card-tags">
-          <span class="tag tag-vision">Diffusion</span>
-          <span class="tag tag-vision">OpenCV</span>
-          <span class="tag tag-ml">Image QA</span>
-        </div>
-        <div class="card-footer">
-          <span class="card-org">Computer Vision</span>
-        </div>
-      </article>
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #f59e0b, #fbbf24);">
+          <div class="card-meta">
+            <span class="card-org">Research</span>
+            <div class="card-icon">🔋</div>
+          </div>
+          <h3 class="card-title">Battery Materials Modeling: DFT + ML</h3>
+          <p class="card-desc">
+            DFT+U workflow with Quantum ESPRESSO for layered oxide cathode stability.
+            Linked computational results to ML screening pipelines, exploring
+            synthesis and cycling behavior through computational modeling.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-material">DFT</span>
+            <span class="tag tag-material">Materials</span>
+            <span class="tag tag-ml">Quantum ESPRESSO</span>
+          </div>
+          <div class="card-footer"><span class="card-org">Computational Chemistry</span></div>
+        </article>
 
-    </div><!-- /phase 3 grid -->
+      </div>
+    </div>
+
+    <!-- ── Panel: AI & ML ── -->
+    <div class="phase-panel" id="phase-aiml">
+      <div class="projects-grid stagger" id="grid-aiml">
+
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #22d3ee, #06b6d4);">
+          <div class="card-meta">
+            <span class="card-org">UT Austin</span>
+            <div class="card-icon">🧠</div>
+          </div>
+          <h3 class="card-title">Post-stroke Prediction with GNN + Explainability</h3>
+          <p class="card-desc">
+            Graph Transformer (TransformerConv) model for post-stroke outcome prediction
+            using ICD codes and clinical features. Benchmarked GNNExplainer, PGExplainer,
+            GSAT, and GIB for clinical decision support.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-graph">GNN</span>
+            <span class="tag tag-graph">XAI</span>
+            <span class="tag tag-ml">Healthcare AI</span>
+            <span class="tag tag-ml">PyTorch</span>
+          </div>
+          <div class="card-footer"><span class="card-org">Clinical AI</span></div>
+        </article>
+
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #6366f1, #22d3ee);">
+          <div class="card-meta">
+            <span class="card-org">UT Austin · Capstone</span>
+            <div class="card-icon">🔍</div>
+          </div>
+          <h3 class="card-title">Hybrid Retrieval for Domain-Specific Search</h3>
+          <p class="card-desc">
+            End-to-end RAG system on AWS combining BM25 keyword search with vector search.
+            Built with Terraform, OpenSearch Serverless, Lambda, Step Functions, and Bedrock.
+            Agentic workflow for orchestration and evaluation.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-llm">RAG</span>
+            <span class="tag tag-llm">LangChain</span>
+            <span class="tag tag-llm">Bedrock</span>
+            <span class="tag tag-data">AWS</span>
+          </div>
+          <div class="card-footer">
+            <span class="card-org">Oxy Capstone</span>
+            <a href="https://github.com/DrageonLee" target="_blank" class="card-link">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #6366f1, #a855f7);">
+          <div class="card-meta">
+            <span class="card-org">UT Austin</span>
+            <div class="card-icon">🏥</div>
+          </div>
+          <h3 class="card-title">Surgical Tool Search Agent</h3>
+          <p class="card-desc">
+            Search agent for surgical and medical tool queries using LangChain agents.
+            Designed retrieval pipeline for accuracy, usability, and workflow efficiency
+            in medical information retrieval.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-llm">LangChain</span>
+            <span class="tag tag-llm">Agents</span>
+            <span class="tag tag-llm">RAG</span>
+          </div>
+          <div class="card-footer"><span class="card-org">Healthcare AI</span></div>
+        </article>
+
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #a855f7, #6366f1);">
+          <div class="card-meta">
+            <span class="card-org">UT Austin</span>
+            <div class="card-icon">🛠️</div>
+          </div>
+          <h3 class="card-title">LLM-based QA Tool &amp; Defect Analytics</h3>
+          <p class="card-desc">
+            LLM-powered QA automation for error detection, root cause classification,
+            and triage support. Includes Power BI dashboard for defect analytics and
+            operational priority visualization.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-llm">LLM</span>
+            <span class="tag tag-data">Power BI</span>
+            <span class="tag tag-ml">Analytics</span>
+          </div>
+          <div class="card-footer"><span class="card-org">QA Automation</span></div>
+        </article>
+
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #22d3ee, #6366f1);">
+          <div class="card-meta">
+            <span class="card-org">UT Austin</span>
+            <div class="card-icon">📚</div>
+          </div>
+          <h3 class="card-title">Guided Learning Evaluation / LLM Judge</h3>
+          <p class="card-desc">
+            Evaluated Gemini's guided tutoring mode against Bloom's Taxonomy across 60 tasks.
+            Designed LLM Judge agent assessing pedagogical alignment, Socratic guidance,
+            and conceptual reinforcement for SQL learning.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-llm">Gemini</span>
+            <span class="tag tag-llm">LLM Judge</span>
+            <span class="tag tag-ml">Evaluation</span>
+          </div>
+          <div class="card-footer"><span class="card-org">EdTech AI</span></div>
+        </article>
+
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #a855f7, #ec4899);">
+          <div class="card-meta">
+            <span class="card-org">UT Austin</span>
+            <div class="card-icon">🎵</div>
+          </div>
+          <h3 class="card-title">Multimodal Music Emotion Recognition</h3>
+          <p class="card-desc">
+            Audio-text multimodal model for music emotion recognition using AST and BERT.
+            Evaluated on MERGE and PMEmo datasets, extended to cross-modal retrieval
+            and emotion-based music recommendation via cosine similarity.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-multi">AST</span>
+            <span class="tag tag-multi">BERT</span>
+            <span class="tag tag-multi">Multimodal</span>
+          </div>
+          <div class="card-footer"><span class="card-org">Multimodal AI</span></div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ── Panel: Data Engineering ── -->
+    <div class="phase-panel" id="phase-data">
+      <div class="projects-grid stagger" id="grid-data">
+
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #10b981, #22d3ee);">
+          <div class="card-meta">
+            <span class="card-org">Circle Platform</span>
+            <div class="card-icon">⚡</div>
+          </div>
+          <h3 class="card-title">API Platform &amp; Demand Forecasting Engine</h3>
+          <p class="card-desc">
+            Developed 100+ APIs accelerating data collection 3x. Built AWS data pipelines,
+            MariaDB query optimization (50% faster processing), and demand forecasting
+            models with Scikit-learn that grew the user base from 1,100 to 2,300.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-data">AWS</span>
+            <span class="tag tag-data">MariaDB</span>
+            <span class="tag tag-ml">Scikit-learn</span>
+            <span class="tag tag-data">Pipeline</span>
+          </div>
+          <div class="card-footer"><span class="card-org">Data Engineering</span></div>
+        </article>
+
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #34d399, #10b981);">
+          <div class="card-meta">
+            <span class="card-org">ABPA</span>
+            <div class="card-icon">📊</div>
+          </div>
+          <h3 class="card-title">ABPA Connect — Data Integration Pipeline</h3>
+          <p class="card-desc">
+            Unified Givebutter and EveryAction data into BigQuery as a single source of truth.
+            Cleaned CRM/fundraising data, resolved cross-platform duplicates,
+            and built Looker Studio KPI dashboards for end-to-end reporting.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-data">BigQuery</span>
+            <span class="tag tag-data">Looker Studio</span>
+            <span class="tag tag-data">ETL</span>
+          </div>
+          <div class="card-footer"><span class="card-org">Data Engineering</span></div>
+        </article>
+
+        <article class="project-card" style="--card-accent: linear-gradient(135deg, #f472b6, #a855f7);">
+          <div class="card-meta">
+            <span class="card-org">Circle Platform</span>
+            <div class="card-icon">🖼️</div>
+          </div>
+          <h3 class="card-title">Image AI — Diffusion &amp; Style Feature Dev</h3>
+          <p class="card-desc">
+            Evaluated and improved AI image editing quality including object/background removal,
+            super-resolution, and diffusion-style editing. Automated manual QA processes
+            and iterated through tuning/testing for stable output.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-vision">Diffusion</span>
+            <span class="tag tag-vision">OpenCV</span>
+            <span class="tag tag-ml">Image QA</span>
+          </div>
+          <div class="card-footer"><span class="card-org">Computer Vision</span></div>
+        </article>
+
+      </div>
+    </div>
+
   </main>
 
   <!-- ====== FOOTER ====== -->
